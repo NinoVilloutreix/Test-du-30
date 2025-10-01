@@ -1,1 +1,10 @@
 @import 'tailwindcss';
+
+@layer base{
+    :root{
+        --clr-bg: hsl(356, 100, 97);
+        --clr-blue: hsl(356, 89, 67);
+        --clr-pink: hsl(191, 100, 29);
+        --clr-yellow: hsl(46, 100, 50);
+    }
+}

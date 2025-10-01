@@ -5,7 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/style.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="p-50 flex justify-center">
+    <card class="card flex bg-amber-50 justify-center g-10 p-15 ">
+      <section class="flex w-max bg-amber-500 justify-center flex-col text-center p-5">
+        <article class="card__article flex flex-col">
+          <div class="card__article-grp flex flex-col">
+            <h3 class="card_article-grp-title text-xs">Individual Plan</h3>
+            <hr class="card_article-grp-hr flex bg-black">
+          </div>
+          <caption class="flex justify-center flex-row">
+            <h2 class="card__article-cpt-h2 text-4xl font-bold">$9.99</h2>
+            <p class="card__article-cpt-p font-bold">/mo</p>
+          </caption>
+        </article>
+        <article class="card__article flex flex-col bg-clip-content">
+          <span class="flex items-center gap-2">
+            <img src="./public/assets/check.svg" class="bg-amber-950 rounded-full h-2 w-2">
+            <h2 class="text-xs">
+              Use on up to 2 devices
+            </h2>
+          </span>
+          <span class="flex items-center gap-2">
+            <img src="./public/assets/check.svg" class="bg-amber-950 rounded-full h-2 w-2">
+            <h2 class="text-xs">
+              10G free cloud storage
+            </h2>
+          </span>
+          <span class="flex items-center gap-2">
+            <img src="./public/assets/check.svg" class="bg-amber-950 rounded-full h-2 w-2">
+            <h2 class="text-xs">
+              No ads while listening
+            </h2>
+          </span>
+        </article>
+      </section>
+      <section class="flex flex-col justify-center items-center">
+        <h2 class="flex justify-center w-40 h-10 items-center text-center bg-amber-300 0 p-2.5 -translate-y-27">
+          <a>Payment Info</a>
+        </h2>
+        <form action="" method="get" class="flex justify-center flex-col gap-4">
+          <div class="flex flex-row gap-2.5">
+            <fieldset class="form">
+              <label class="text-xs text-zinc-400"for="name">Card number</label>
+              <input class="border-1 border-zinc-400"type="text" name="name" id="name" required />
+            </fieldset>
+            <fieldset class="form">
+              <label class="text-xs text-zinc-400"for="name">CVV</label>
+              <input class="border-1 w-16 border-zinc-400"type="text" name="name" id="name" required />
+            </fieldset>
+          </div>
+          <div class="flex flex-row gap-2.5">
+            <fieldset class="form">
+              <label class="text-xs text-zinc-400"for="name">Name on card</label>
+              <input class="border-1 border-zinc-400"type="text" name="name" id="name" required />
+            </fieldset>
+            <fieldset class="form">
+              <label class="text-xs text-zinc-400"for="name">MM</label>
+              <input class="border-1 w-7 border-zinc-400"type="text" name="name" id="name" required />
+            </fieldset>
+            <fieldset class="form">
+              <label class="text-xs text-zinc-400"for="name">YY</label>
+              <input class="border-1 w-7 border-zinc-400"type="text" name="name" id="name" required />
+            </fieldset>
+          </div>
+        </form>
+      </section>
+    </card>
   </body>
 </html>
